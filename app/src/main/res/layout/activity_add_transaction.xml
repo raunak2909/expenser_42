@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="21dp"
+    android:gravity="center"
+    tools:context=".screen.addTrans.AddTransactionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:fontFamily="@font/montserrat"
+        android:text="New Transaction"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/edtAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginBottom="11dp"
+        android:inputType="numberDecimal"
+        android:hint="Enter Amt" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Enter Title" />
+
+    <EditText
+        android:id="@+id/edtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginBottom="11dp"
+        android:hint="Enter Desc" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/spinnerTranType"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/btnSelectCatType"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:background="#673AB7">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="7dp"
+            android:visibility="gone"
+            android:id="@+id/imgCatType"/>
+
+
+        <TextView
+            android:id="@+id/txtCatType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:layout_marginLeft="11dp"
+            android:textColor="#fff"
+            android:textSize="19sp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddTransaction"
+        android:layout_marginBottom="11dp"
+        android:text="Add"/>
+
+
+
+</LinearLayout>
